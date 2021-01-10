@@ -1,4 +1,6 @@
 .vscode/ 
 env/ 
 secret* 
-__pycache__/ 
+__pycache__/
+*.zip
+*.mp4

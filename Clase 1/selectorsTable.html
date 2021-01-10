@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Selectors</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+            table {
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid white;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>CSS Selectors</h3>
+            <table id="table1">
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a, b</td>
+                        <td>Multiple Element Selector</td>
+                    </tr>
+                    <tr>
+                        <td>a b</td>
+                        <td>Descendant Selector</td>
+                    </tr>
+                    <tr>
+                        <td>a > b</td>
+                        <td>Child Selector</td>
+                    </tr>
+                    <tr>
+                        <td>a + b</td>
+                        <td>Adjacent Sibling Selector</td>
+                    </tr>
+                    <tr>
+                        <td>[a=b]</td>
+                        <td>Attribute Selector</td>
+                    </tr>
+                    <tr>
+                        <td>a:b</td>
+                        <td>Pseudoclass Selector</td>
+                    </tr>
+                    <tr>
+                        <td>a::b</td>
+                        <td>Pseudoelement Selector</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+sass --watch name.scss:name.css
