@@ -1,0 +1,36 @@
+Create an repository in github
+git clone <url>
+create and modify files
+git add <files>
+git commit -m "message"
+git status
+git push
+
+To add all files you changed and commit, use this command:
+git commit -am "message"
+
+you can have a merge conflict if two persons modify the same line or the same file
+To solve this, git add metadata in the code with lines than mark the conflict site.
+You have to modify this to continue in the pull or push
+
+git log is to see all changes in the repository
+
+git reset take the current state repository and reverted back to a previous state.
+examples:
+git reset --hard <commit hash>
+git reset --hard origin/master
+
+Branchs
+git branch -> tells me in what branch I'm in and all other branches
+git checkuot -b style -> Create a branch called style
+git checkout master -> Is used to move to a branch. You dont use the -b flag to move.
+git merge style -> Try to merge the style branch to your current branch (Master in this case).
+
+
+Github tools
+fork -> Make a copy of all in the repository from another person to your repository
+pull-requests -> Made to pull your fork to the organization.
+
+Github Pages -> Used to submit your own page
+You have to create a repository named <user>.github.io
+Clone this to your pc and push your page, and you will have a new webpage.
