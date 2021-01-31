@@ -1,0 +1,79 @@
+# Table example
+CREATE TABLE flights (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    origin TEXT NOT NULL,
+    destination TEXT NOT NULL,
+    duration INTEGER NOT NULL
+);
+
+# Constraints
+1. CHECK
+2. DEFAULT
+3. NOT NULL
+4. PRIMARY KEY
+5. UNIQUE
+6. ...
+
+# insert example
+INSERT INTO flights
+    (origin, destination, duration)
+    VALUES ("New York", "London", 415);
+
+# select example
+SELECT * FROM flights;
+SELECT origin, destination FROM flights;
+SELECT * FROM flights WHERE id = 3;
+SELECT * FROM flights WHERE origin = "New York";
+SELECT * FROM flights WHERE duration > 500;
+SELECT * FROM flights WHERE duration > 500 AND destination = "Paris";
+SELECT * FROM flights WHERE origin IN ("New York", "Lima");
+SELECT * FROM flights WHERE origin LIKE "%a%";
+
+# verify tables existing
+.tables
+
+# Functions
+1. AVERAGE
+2. COUNT
+3. MAX
+4. MIN
+5. SUM
+6. ...
+
+# To update tables, example
+UPDATE flights
+    SET duration = 430
+    WHERE origin = "New York"
+    AND destination = "London";
+
+# delete examples
+DELETE FROM flights WHERE destination = "Tokyo"
+
+# Older clauses
+1. LIMIT
+2. ORDER BY
+3. GROUP BY
+4. HAVING
+5. ...
+
+# Foreign keys
+# Relate different tables
+
+# join example
+SELECT first, origin, destination FROM flights JOIN passengers ON passengers.flight_id = flights.id;
+
+# joins
+1. JOIN / INNER JOIN
+2. LEFT OUTER JOIN
+3. RIGHT OUTER JOIN
+4. FULL OUTER JOIN
+
+# create index example
+CREATE INDEX name_index ON passengers (last);
+
+# SQL injections
+# if a username is hacker"-- this ignore the rest of the query and is dangerous
+# the sql sees that: SELECT * FROM users WHERE username = "hacker"--" AND password = "1234";
+
+# Race Conditions
+# When you have two people trying to change a table at the same time.
