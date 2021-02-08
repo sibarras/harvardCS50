@@ -1,0 +1,32 @@
+CI/CD
+
+Continuous Integration
+    1. Frecuent merges to main branch
+    2. Automated unit testing
+
+Continuous Delivery
+    1. Short realase schedules
+
+
+Github Actions
+    Runs test for every push
+    uses YAML
+        YAML Example:
+        key1: val1
+        key2: val2
+        key3:
+            -item1
+            -item2
+            -item3
+
+
+To use docker, you have to run with
+    docker-compose up
+
+To got inside the docker:
+    To see the dockers running and ids
+        >docker ps
+    to enter in the docker and interactivly run commands
+        >docker exec -it <id> bash -l
+    to exit
+        crtl + d
