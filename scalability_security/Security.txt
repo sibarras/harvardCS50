@@ -1,0 +1,48 @@
+Git
+    Git Version control can have credential information that
+    you dont have to show, so you need to have slecial atention to this.
+    The commits that you already do, has this information although in the
+    new version you removed it.
+
+HTML
+    Phishing Attack
+        link1.html
+        myBankLink.html and bank.html
+
+Secret-Key Cryptography
+    Private-key and public-key
+
+SQL
+    1. For passwords, you have to use a hash funtion. The company only
+        have your hash, not your plane text password.
+    2. for emails, you dont have to tell if the email have a user.
+    3. SQL injections, that you see in sql lecture
+
+API KEYS
+    1. Rate Limiting
+    2. Route Authentication
+
+Javascript
+Cross-Site Scripting (Security Django Application)
+
+Cross-site Request Forgery
+    Bank transfers dont have to be requested with get requests.
+    Use csrf token
+
+Other Web Frameworks
+1. Server Side
+    Express.js
+    Ruby on Rails
+    ...
+
+2. Client Side
+    Angular JS
+    React
+    Vue.js
+
+Deploying Websites
+    Amazon Web Services
+    Github Pages
+    Google Cloud
+    Heroku
+    Amazon Azure

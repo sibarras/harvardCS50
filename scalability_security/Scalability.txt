@@ -1,0 +1,35 @@
+Load balancer:
+    Is the element that dispatch the request to the servers.
+
+Load balancing methods:
+    1. Random Choices
+    2. Round Robin
+    3. Fewest Connections
+
+Session-Aware Load Balancer:
+    Sticky-Sessions
+    Session in Database
+    Client-Side Sessions
+
+Autoscaling
+
+Tables:
+    You can split horizontally tables to try to have better times,
+    and also split them by uses, like domestical_flights and
+    international_flights. This is partitioning databases.
+
+    You can use database replication.
+        1. Single-primary replication
+        2. Multi-Primary replication
+
+Caching:
+    1. Client-Side Caching
+        Cache control
+        ETag
+    
+    2. Client-Side Caching
+        Django Cache Framework
+            1. Per-View Caching
+            2. Template Fragment Caching
+            3. Low-Level Cache API
+
